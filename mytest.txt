@@ -1,0 +1,24 @@
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+Scanner scanner = new Scanner(System.in);
+String string = scanner.nextLine(); 
+String[] strings = string.split("");
+int num1 = Integer.parseInt(strings[0]);
+int num2 = Integer.parseInt(strings[2]);
+String sinc = strings[1];
+double res = 0;
+if (sinc.equals("+")) {
+    res = num1+num2;
+} else if (sinc.equals("-")) {
+    res = num1-num2;
+} else if (sinc.equals("*")) {
+    res = num1*num2;
+}else if (sinc.equals("/")) {
+    res = (double) num1/num2;
+    }
+        System.out.println(res);
+
+
+    }}
